@@ -1,0 +1,25 @@
+ <link type="text/css" rel="stylesheet" href="styles.css"/>
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post">
+    <div >
+    <input name='rot' value=13>What is the rotation?</input>
+    <br>
+    <br>
+    <label><h3>Enter your message below  :</h3></label>
+    <br>
+    <textarea name="message"  style="height: 250px; width: 500px;">{{userin}}  
+    </textarea>
+    </div>
+    <br>
+    <button>Submit</button>
+    
+</form>
+
+<p>
+    <h2>Your output is:</h2>
+    {{userin}}
+
+{% endblock %}
