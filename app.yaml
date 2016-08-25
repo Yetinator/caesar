@@ -11,11 +11,9 @@ handlers:
 
 - url: .*
   script: main.app
-- url: /home/brian/Dropbox/launchCodePrograms/caesar/templates
-  static_files: styles.css
-  upload: styles\.css
-- url: /home/brian/Dropbox/launchCodePrograms/caesar/templates
-  static_dir: styles.css  
+  
+- url: /templates
+  static_dir: styles 
   
 
 
